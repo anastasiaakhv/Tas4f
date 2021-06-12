@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel = "stylesheet" type = "text/css" href = "externalStyle.css">
+
+    <title>Tas4f | Articles | Shoes </title>
+
+    <!-- Internal style: specifically for this page-->
+    <style>
+    .articles
+      {
+        left:27%;
+      }
+
+      .home
+      {
+        left:45%;
+      }
+
+      .about  
+      {
+        left:63%;
+      }
+
+      ideeFixe
+      {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 600px; 
+      }
+
+      .ideeFixeShoes 
+      {
+        margin-left: 18%;
+        margin-right: 18%;
+      }
+
+       @media only screen and (max-width: 600px) 
+      {
+        .ideeFixe
+        {
+          margin-top: 20%;
+          width: 100%;
+          height: 120%
+        }
+
+        .ph1
+        {
+          width: 100%;
+          height: 120%
+        }
+
+      }
+    </style>
+  </head>
+
+ <body>
+    <!-- Centering Everything-->
+    <div class = "center"> 
+
+    <!-- Title/Header: Shoes -->
+    <h1>Shoes</h1>
+
+    <!-- Buttons -->
+    <div id = myButtons>
+        <br>
+        <!--Button: Back redirects the user to previous page: Find a Dress to Impress & More-->
+        <button type="button" 
+                class = "articles" onclick="window.location.href = 'articles.html';"> Back
+        </button>
+
+        <!--Implementing jQuery Hover over Effect-->
+        <script src = "jquery-3.5.0.js" > </script>
+        <script>
+          $(document).ready(function() {
+
+            $(".articles").hover(
+				
+               function () {
+                  $(".articles").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("articles").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script> <!-- End: Back related code-->
+
+          <br>
+          <br>
+
+        <!-- Button: Home - redirects user to home page -->
+        <button type="button" 
+                class = "home" 
+                onclick="window.location.href = 'index.html';">Home</button>
+
+        <!--Implementing jQuery Hover over Effect-->
+        <script>
+          $(document).ready(function() {
+
+            $(".home").hover(
+				
+               function () {
+                  $(".home").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("home").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script> <!-- End: Home related code-->
+
+          <br>
+          <br>
+
+        <!-- Button: About Us - redirects user to About Us page -->
+        <button type="button"
+                class = "about"
+                onclick = "window.location.href = 'about.html'">About Us</button>
+        
+        <!--Implementing jQuery Hover over Effect-->
+        <script>
+          $(document).ready(function() {
+
+            $(".about").hover(
+				
+               function () {
+                  $(".about").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("about").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script> <!-- End: About Us related code-->
+        </div> <!-- End: Buttons-->
+        
+        <!-- Line for aesthetical purposes-->
+        <br>
+        <p class = "line"> ___________________________________________________________________________________ </p>
+      
+        <!-- Start: Shoes Class -->
+        <div class = "ideeFixe">
+
+          <!-- Providing images: Flats in Patent Mint -->
+          <img class = "ph1" src = "IMG_7233.JPG" height = "600" width="400" 
+               alt = "shoes" />
+          <img class = "ph1" src = "IMG_1806.JPG" height = "600" width="400"
+               alt = "shoes" /> 
+
+          <!-- Providing corresponding article -->
+          <!-- Retrieved from my instagram page:
+          https://www.instagram.com/tas4f/ -->
+         <article class = "ideeFixeShoes">
+          <br>
+          These are the ballet flats in patent mint leather from @idee.fixe
+          <br>
+          The thing I love about these shoes is that they are really simple but still make a statement.
+          <br><br>
+          They make the outfit fancier but are the most comfortable shoes to walk in.
+          The heel is small, kind of muted but it definitely makes the difference. That tiny bit of height (1.5 cm) shows the best features of the leg while boosting your confidence.
+          <br><br>
+          I guess these are my thoughts about these shoes. Feel free to share your thoughts/memories/emotions about the shoes you love.
+          <br><br>
+          </article>
+          <p>
+             _______________________________________________________________
+          <br><br>
+            </p>
+      </div>
+
+    </div> <!-- End: class = "center"-->
+    </body>
+
+  </html>
+

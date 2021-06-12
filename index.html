@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+      
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel = "stylesheet" type = "text/css" href = "externalStyle.css">
+
+    <title>Tas4f | Fashion Blog </title>
+
+    <!-- Internal style: specifically for this page-->
+    <style>
+
+      .articles
+      {
+        left:27%;
+      }
+
+      .questionnaire
+      {
+        left:45%;
+      }
+
+      .about  
+      {
+        left:63%;
+      }
+
+      @media only screen and (max-width: 600px) 
+      {
+
+        #taso
+        {
+         
+         width: 100%;
+         height: 120%
+        }
+
+      }
+
+    </style>
+  </head>
+
+    <body>
+
+    <!-- Centering everything -->
+    <div class = "center">
+
+     <!-- Title of the page - tas4f -->
+     <h1>t a s 4f</h1>
+    
+      <div class = "myButtons"> <!-- Start of mybuttons -->
+
+        <br>
+
+        <!-- Button: Find a Dress to Impress & More -->
+        <div class = "box">
+        <button type="button" 
+                class = "articles" 
+                onclick="window.location.href = 'articles.html';">Find a Dress to Impress & More</button>
+        <!-- Implementing jQuery Hover over effect -->
+        <script src = "jquery-3.5.0.js" > </script>
+        <script>
+          $(document).ready(function() {
+
+            $(".articles").hover(
+				
+               function () {
+                  $(".articles").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("button").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script>
+        </div> <!-- End: Find a Dress to Impress & More -->
+        
+          <br>
+          <br>
+
+        <!-- Button: Fill out the Questionnaire -->
+        <div class = "box">
+        <button type="button" 
+                class = "questionnaire"
+                onclick = "window.location.href = 'questionnare.html'"
+                >Fill out the Questionnaire</button>
+        <!-- Implementing jQuery Hover over effect -->
+        <script>
+          $(document).ready(function() {
+
+            $(".questionnaire").hover(
+				
+               function () {
+                  $(".questionnaire").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("questionnaire").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script>
+
+        </div> <!--  End: Fill out the Questionnare -->
+        
+          <br>
+          <br>
+
+        <!-- Button: About Us-->
+        <div class = "box">
+        <button type="button" 
+                class = "about"
+                onclick = "window.location.href = 'about.html'">About Us</button>
+          <!-- Implementing jQuery Hover over effect -->
+          <script>
+          $(document).ready(function() {
+
+            $(".about").hover(
+				
+               function () {
+                  $(".about").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("about").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script>
+            
+        </div> <!-- End: About Us -->
+        
+
+        </div> <!-- End of mybuttons -->
+
+        <br><br>
+
+        <p class = "line"> ___________________________________________________________________________________ </p>
+
+        
+
+<!-- Picture -->
+<div class = "box">  
+ <figure >
+        
+        <img id = "taso" src = "DD1FFB2F-9699-4C4A-AA3E-4506B02C3211.JPG" height = "800" width="600" alt = "earring" />
+        
+      </figure> 
+      </div>
+       <!-- End Picture -->
+
+  </div> <!-- End of div class = "center" -->
+</body>
+</html>

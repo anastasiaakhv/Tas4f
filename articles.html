@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel = "stylesheet" type = "text/css" href = "externalStyle.css">
+
+    <title>Tas4f | Articles </title>
+
+    <!-- Internal style: specifically for this page-->
+    <style>
+    
+    .home
+    {
+      left:20%;
+    }
+
+    .clothes
+    {
+      left:38%;
+    }
+
+    .accessories
+    {
+      left:55%;
+    }
+
+    .shoes
+    {
+      right: 20%;
+    }
+    .quote
+    {
+      margin-left: 33%;
+      margin-right: 33%;
+    }
+
+    @media only screen and (max-width: 600px) 
+    {
+        .h1
+        {
+          padding-bottom: 20%
+        }
+
+        .clothes
+        {
+          font-size: 6px;
+          padding: 0px;
+        }
+
+        .accessories  
+        {
+          font-size: 6px;
+          padding: 0px;
+        }
+
+        .shoes  
+        {
+          font-size: 6px;
+          padding: 0px;
+        }
+
+        .quote
+        {
+          font-size: 25px;
+          width: 100%;
+          margin-left: 70%;
+        }
+        .picture
+        {
+          padding-top: 35%;
+          width: 70%;
+          height: 120%;
+          margin-right: 300px;
+        } 
+    }
+    </style>
+    </head>
+  
+  <body>
+    <!-- Centering Everything -->
+    <div class = "center">
+    
+    <!-- Title/Header: Find a Dress to Impress & More -->
+    <h1>Find a Dress to Impress & More</h1>
+    
+    <br> <br>
+
+        <!-- Button: Home - directs user to homepage -->
+        <div class = "box">
+        <button type="button" 
+                class = "home" 
+                onclick="window.location.href = 'index.html';">Home</button>
+
+         <!-- Implementing jQuery Hover over Effect -->
+        <script src = "jquery-3.5.0.js" > </script>
+        <script>
+          $(document).ready(function() {
+
+            $(".home").hover(
+				
+               function () {
+                  $(".home").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("home").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script>
+        </div>  <!-- End: Home related code -->
+
+        <!-- Button: Clothes - directs user to clothes page -->
+        <div class = "box">
+        <button type="button"
+                class = "clothes"
+                onclick = "window.location.href = 'clothes.html';">Clothes</button>
+
+        <!-- Implementing jQuery Hover over Effect -->
+        <script>
+          $(document).ready(function() {
+
+            $(".clothes").hover(
+				
+               function () {
+                  $(".clothes").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("clothes").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script>
+        </div> <!-- End: Clothes related code -->
+
+        <!-- Button: Accessories - directs user to accessories page -->
+        <div class = "box">
+        <button type="button" 
+                class = "accessories" 
+                onclick="window.location.href = 'accessories.html';">Accessories</button>
+
+        <!-- Implementing jQuery Hover over Effect -->
+        <script>
+          $(document).ready(function() {
+
+            $(".accessories").hover(
+				
+               function () {
+                  $(".accessories").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("accessories").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script>
+        </div> <!-- End: Accessories related code -->
+
+        <!-- Button: Shoes - directs user to shoes page -->
+        <div class = "box">
+        <button type="button" 
+                class = "shoes" 
+                onclick = "window.location.href = 'shoes.html';">Shoes</button>
+
+        <!-- Implementing jQuery Hover over Effect -->
+        <script>
+          $(document).ready(function() {
+
+            $(".shoes").hover(
+				
+               function () {
+                  $(".shoes").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("shoes").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script>
+        </div> <!-- End: Shoes related code -->
+
+        <br>  <br> <br>  <br> <br>  <br> <br>
+
+        <p class = "line"> ___________________________________________________________________________________ </p>
+
+        <!-- Providing a fashion quote-->
+        <!-- Retrieved from: https://quotes.yourdictionary.com/author/miuccia-prada/611690 -->
+        <div class = "box">
+        <article class = "quote">
+          <br>
+          "What you wear is how you present yourself to the world, especially today, when human contacts are so quick. Fashion is instant language." —Miuccia Prada
+          <br><br>
+          You will find your dream pieces in the corresponding sections. 
+          <br> <br>
+          </article>
+          </div>  <!-- End: Quote related code -->
+        
+        <!-- Providing a picture for aesthetical purposes-->
+        <div class = "box">
+        <figure class = "picture"> 
+          <img src = "IMG_4028.JPG" height = "1150" width="600" alt = "accessories"/>
+          </figure>
+          </div>  <!-- End: Picture related code -->
+
+    </div> <!-- End: class = "center" -->
+    </body>
+  </html>

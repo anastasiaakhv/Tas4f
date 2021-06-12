@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel = "stylesheet" type = "text/css" href = "externalStyle.css">
+
+    <title>Tas4f | About </title>
+
+    <!-- Internal style: specifically for this page-->
+    <style>    
+
+      .home
+      {
+        left:33%;
+      }
+      .questionnare 
+      {
+        left:55%;
+      }
+
+      .list
+      {
+        color: cornflowerblue;
+        padding-left: 0;
+      }
+      .h2
+      {
+        font-family:'Open Sans Condensed', sans-serif;
+      }
+      .concept
+      {
+        font-size: 20px;
+        color: black;
+        margin-left:33%;
+        margin-right: 33%;
+      }
+      .myTable
+      {
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+        border-collapse: separate;
+        border-spacing: 10px;
+      }
+
+      @media only screen and (max-width: 600px) 
+      {
+
+        .home
+      {
+        left:33%;
+      }
+      .questionnaire 
+      {
+        left:55%;
+      }
+
+      }
+
+      
+    </style>  
+
+  </head>
+
+  <body>
+  
+  <!-- Centering Everything -->
+  <div class = "center">
+  <!-- Title of the page - About -->
+  <h1>About</h1>
+   
+        <br>
+        <!-- Button: Home -->
+        <div class = "box">
+        <button type="button" 
+                class = "home" 
+                onclick="window.location.href = 'index.html';">Home</button>
+        <!-- Implementing jQuery Hover over Effect -->
+        <script src = "jquery-3.5.0.js" > </script>
+        <script>
+          $(document).ready(function() {
+
+            $(".home").hover(
+				
+               function () {
+                  $(".home").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("home").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script>
+        </div> <!-- End: Home -->
+        
+        <!-- Button: Fill out the Questionnaire -->
+        <div class = "box">
+        <button type="button" 
+                class = "questionnaire"
+                onclick="window.location.href = 'questionnare.html';">Fill out the Questionnare</button>
+        <!-- Implementing jQuery Hover over Effect -->
+        <script>
+          $(document).ready(function() {
+
+            $(".questionnare").hover(
+				
+               function () {
+                  $(".questionnare").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("questionnare").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script>
+        </div> <!-- End: Fill out the Questionnare -->
+
+        <br>  <br> <br>  <br> <br>  <br> <br>
+    
+        <p class = "line"> ___________________________________________________________________________________ </p>
+       
+        <!-- Subtitle: Concept -->
+        <h2 class = "h2" > Concept </h2> 
+
+
+          <section> <!-- Describe concept  -->
+            <article class = "concept">
+            The purpose of tas4f is to unite people around the love of fashion and aesthetics.
+            Tas4f aims to find unique pieces that are aesthetically pleasing. 
+            The idea is to share the stories of different clothes as well as shoes and accesories to peole around the globe.
+            <br><br>
+            Feel free to share pic of your favorite piece along with its special story with us.
+            </article>
+            </section>
+          
+        
+        <br>
+        <p class = "line"> ___________________________________________________________________________________ </p>
+    
+
+        <!-- Table of Pictures for the Asethetics  -->
+        <table style="width:50%" class = "myTable">
+           <tr>
+            <td><img class = "ph1" src = "IMG_19943.JPG" height = "350" width="220" alt = "earring"/></td>
+            <td><img class = "ph1" src = "DD1FFB2F-9699-4C4A-AA3E-4506B02C3211.JPG" alt = "earring" height = "350" width="220" /></td>
+            <td><img class = "ph1" src = "IMG_19943.JPG" height = "350" width="220" alt = "earring"/></td>
+          </tr>
+        </table> <!-- End Table  -->
+        
+
+        <!-- Subtitle Vol2  -->
+        <h2 class = "h2"> Contact </h2>
+        <!-- Implementing Unordered List -->
+
+        <ul class = "list">
+         <li>Address: Paliashvili 10</li>
+         <li>Phone: +995 598 XXX XXX</li>
+         <li>Email: contact@tas4f.com</li>
+      </ul> <!-- End List  -->
+    
+    </div> <!-- End Center  -->
+    </body>
+
+  </html>
+

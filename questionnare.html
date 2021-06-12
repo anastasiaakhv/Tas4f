@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel = "stylesheet" type = "text/css" href = "externalStyle.css">
+
+    <title>Tas4f | Questionnare </title>
+
+    <!-- Internal style: specifically for this page-->
+    <style>
+      .home
+      {
+        left:33%;
+      }
+
+      .about  
+      {
+        left:55%;
+      }
+
+      .Form
+      {
+        border-radius: 25px;
+        border: 2px solid lightblue; 
+        margin-right: 25%;
+        margin-left: 25%;
+      }
+
+      .mySpan
+      {
+        color: cornflowerblue;
+      }
+
+      .Submit
+      {
+        border-radius: 15px;
+        border: 2px solid lightblue; 
+        background-color : white;
+        width: 7em;  
+        height: 4em;
+        font-size: 12px;
+        font-family:'Open Sans Condensed', sans-serif;
+
+      }
+      
+      table, td, th 
+      {
+        border: 5px solid cornflowerblue;
+        padding: 5px;
+      }
+
+      .infoTable
+      {
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+        color: cornflowerblue;
+        text-align: center;
+        padding: 5px;
+        width: 55%;
+        height: 50%;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div class = "center">
+    <!-- Title/Header: Fill out the Questionnare-->
+    <h1>Fill out the Questionnare</h1>
+        <div class = "box">
+        <!-- Button: Home - directs the user to home page -->
+        <button type="button" 
+                class = "home" 
+                onclick="window.location.href = 'index.html';">Home</button>
+
+        <!-- Implementing jQuery Hover over Effect -->
+        <script src = "jquery-3.5.0.js" > </script>
+        <script>
+          $(document).ready(function() {
+
+            $(".home").hover(
+				
+               function () {
+                  $(".home").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("home").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script>
+        </div> <!-- End: Home related code -->
+
+         <!-- Button: About Us - directs the user to About Us page -->
+        <div class = "box">
+        <button type="button" 
+                class = "about" 
+                onclick = "window.location.href = 'about.html'">About Us</button>
+
+        <!-- Implementing jQuery Hover over Effect -->
+        <script>
+          $(document).ready(function() {
+
+            $(".about").hover(
+				
+               function () {
+                  $(".about").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("about").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script>
+        </div> <!-- End: About Us related code -->
+
+        <!-- New line as well as line for aesthetical purposes -->
+        <br>  <br> <br>  <br> <br>  <br> <br>
+
+        <p class = "line"> ___________________________________________________________________________________ </p>
+
+        <!-- Introducing Form -->
+        <div class = "box">
+        <form class = "Form">
+        <section class = "credentials">
+          <br>
+          <!-- Call to action -->
+				  <h2>Let's fill the questionnare out!</h2>  
+
+          <!-- First Name -->
+	        <label for = "firstName"> First Name </label>
+				  <input type = "text" name = "firstName" id = "firstName">
+         
+         <!-- Last Name -->
+         <label for = "lastName"> Last Name </label>
+				 <input type = "text" name = "lastName" id = "lastName">
+        
+         <!-- Age -->
+         <label for="age">How old are you?</label>
+				 <input type = "number" id = "age" step = "1" min = "18" max = "100" name = "age">
+          </section>
+
+         <!-- Checkboxes -->
+         <section class = "checkbox">
+           <!-- Call to action -->
+           <h3>Check the pieces of clothing you are interested in
+             <br>
+             _______________________________________________
+           </h3>
+
+          <!-- Checkbox: Dresses -->
+          <label for="Dresses">Dresses</label>
+          <input type = "checkbox"
+                 id = "Dresses"
+                 name = "Dresses"
+                 value = "Dresses"> 
+             
+               
+          <!-- Checkbox: T-shirts -->
+          <label for="T-shirts">T-Shirts</label>
+          <input type = "checkbox"
+                 id = "T-shirts"
+                 name = "T-shirts"
+                 value = "T-shirts"> 
+          
+          <!-- Checkbox: Trousers -->
+          <label for="Trousers">Trousers</label>
+          <input type = "checkbox"
+                 id = "Trousers"
+                 name = "Trousers"
+                 value = "Trousers"> 
+        
+         <!-- Checkbox: Accessories -->
+         <label for="Accessories">Accessories</label>
+         <input type = "checkbox"
+                id = "Accessories"
+                name = "Accessories"
+                value = "Accessories"> 
+        
+         <!-- Checkbox: Shoes -->
+         <label for="Shoes">Shoes</label>
+         <input type = "checkbox"
+                id = "Shoes"
+                name = "Shoes"
+                value = "Shoes"> 
+             
+           </section>
+
+           <!-- Checkbox: Shoes -->
+           <h3>Let's answer some more questions 
+             <br>
+             _______________________________________________
+           </h3>
+           
+          <section class = "yesornoQs">
+            
+            <span class = "mySpan" >New or vintage?</span>
+            <br><br>
+	
+            <input id = "new"
+                 type = "radio"
+                 name = "newVintage"
+                 value = "new">
+            <label for="new">New</label>
+
+	        
+           <input id = "vintage"
+                 type = "radio"
+                 name = "newVintage"
+                 value = "vintage">
+           <label for="vintage">Vintage</label>
+
+           <br><br>
+           <span class = "mySpan" >Leather or fur?</span>
+           <br><br>
+	
+           <input id = "leather"
+                 type = "radio"
+                 name = "leatherFur"
+                 value = "leather">
+           <label for="leather">Leather</label>
+
+	        
+           <input id = "fur"
+                 type = "radio"
+                 name = "leatherFur"
+                 value = "fur">
+           <label for="fur">Fur</label>
+
+             </section> <!-- End: Checkboxes -->
+
+          <!-- Submit -->
+          <section class = "submit">
+            
+            <p>_______________________________________________</p>
+            <input class = "Submit" type = "submit" value = "Submit">
+            </section> <!-- End: Submit -->
+            <br><br>
+    
+      </form> <!-- End: Form -->
+      </div>
+
+          <!-- Centering -->
+          
+            <!-- Start: Table  -->
+          <div class = "infoTable">
+            <br><br>
+            <!-- Table  -->
+            <table>
+            <!-- First Row of infoTable -->
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+              <th>Dresses</th>
+              <th>T-Shirts</th>
+              <th>Trousers</th>
+              <th>Accessories</th>
+              <th>Shoes</th>
+            </tr> <!-- End: 1st row -->
+
+            <!-- Second Row of infoTable -->
+            <!-- This row will be filled out with the corresponding data after doing backend -->
+            <!-- this is sample data  -->
+            <tr>
+            <td> "Name" </td>
+            <td> "Last Name" </td>
+            <td> "Age" </td>
+            <td> "Choice"</td>
+            <td> "Choice"</td>
+            <td> "Choice"</td>
+            <td> "Choice"</td>
+            <td> "Choice"</td>
+            </tr> <!-- End: 2nd row -->
+            </table> <!-- End: Table -->
+            
+          </div> <!-- End: infoTable -->
+        </div> <!-- End: class = "center" -->
+    </body>
+
+  </html>
+

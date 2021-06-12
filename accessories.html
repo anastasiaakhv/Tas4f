@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel = "stylesheet" type = "text/css" href = "externalStyle.css">
+
+    <title>Tas4f | Articles | Accessories </title>
+
+    <!-- Internal style: specifically for this page-->
+    <style>
+    
+    .pearlEarrings 
+    {
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 600px; 
+    }
+    .goldEarrings pearlEarrings
+    {
+      display: inherit;
+      margin-left: inherit;
+      margin-right: inherit;
+      height: inherit; 
+    }
+    
+    .earRing 
+    {
+      margin-left: 18%;
+      margin-right: 18%;
+    }
+
+    .sunglasses
+    {
+      margin-left: 26%;
+      margin-right: 26%;
+    }
+
+    .goldEarRing
+    {
+      margin-left: 18%;
+      margin-right: 18%;
+    }
+
+    .articles
+      {
+        left:27%;
+      }
+
+      .home
+      {
+        left:45%;
+      }
+
+      .about  
+      {
+        left:63%;
+      }
+
+      @media only screen and (max-width: 600px) 
+      {
+      
+        .pearlEarrings
+        {
+          margin-top: 10%;
+          width: 100%;
+          height: 120%
+        }
+
+        .goldEarrings pearlEarrings
+        {
+          width: inherit;
+          height: inherit;
+        }
+
+        .ph3
+        {
+          width: 100%;
+          height: 120%
+        }
+
+      }
+      
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Centering Everything -->
+    <div class = "center">
+    <!-- Title of the page - Accessories -->
+    <h1>Accessories</h1>
+
+    <div id = myButtons>
+        
+        <br>
+         <!-- Button Back -  Brings the user back to articles page -->
+        <button type="button" class = "articles" onclick="window.location.href = 'articles.html';"> Back
+          </button>
+
+          <!--Implementing jQuery Hover over Effect-->
+          <script src = "jquery-3.5.0.js" > </script>
+          <script>
+          $(document).ready(function() {
+
+            $(".articles").hover(
+				
+               function () {
+                  $(".articles").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("articles").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script> <!-- End: Back related code -->
+          
+          <br>
+          <br>
+
+        <!-- Button Home -  Brings the user to homepage -->
+        <button type="button" class = "home" onclick="window.location.href = 'index.html';">Home</button>
+
+         <!--Implementing jQuery Hover over Effect-->
+         <script>
+          $(document).ready(function() {
+
+            $(".home").hover(
+				
+               function () {
+                  $(".home").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("home").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script> <!-- End: Home related code -->
+
+          <br>
+          <br>
+        
+        <!-- Button Home -  Brings the user to About Us -->
+        <button type="button" 
+                class = "about"
+                onclick = "window.location.href = 'about.html'">About Us</button>
+        <!--Implementing jQuery Hover over Effect-->
+        <script>
+          $(document).ready(function() {
+
+            $(".about").hover(
+				
+               function () {
+                  $(".about").css({"background-color":"#f0fffa"});
+               }, 
+			
+               function () {
+                 $("about").css({"background-color":"white"});
+               }
+            );
+				
+         });
+        </script> <!-- End: About related code -->
+
+        </div> <!-- End: Buttons div -->
+
+        <br>
+        <p class = "line"> ___________________________________________________________________________________ </p>
+      
+
+    <div class = "pearlEarrings">
+
+          <!-- Providing Pearl Earring Images-->
+          <img class = "ph1" src = "IMG_19943.JPG" height = "600" width="400" 
+               alt = "earring"/>
+          <img class = "ph1" src = "IMG_19923.JPG" height = "600" width="400" 
+               alt = "earring"/> 
+        
+        <!-- Pearl Earrings: Corresponding Article -->
+        <!-- Retrieved from my instagram page:
+        https://www.instagram.com/tas4f/ -->
+        <article class = "earRing">
+          <br>
+          These are pearl earrings that I got myself for Christmas. 
+          They are from @parfois.
+          
+          The thing I love about these earrings is their jagged surface. The little “imperfections” make them interesting to look at.
+          <br><br>
+          Lately, a lot of people have been loving the trend of pearl details. Most retailers carry them sphere shaped. Usually they come in different sizes and colors. Yet, the “sphere” gets kind of boring when it comes to faux pearls.
+          <br><br>
+          However, the surface that is not smooth kind of spices things up. Earrings like these are a perfect solution to go for a more tailored/interesting look. They are such a no-brainer, easy to pair with any outfit.
+          <br><br>
+          </article>
+          <p class = "line">
+             _______________________________________________________________
+          <br><br>
+            </p>
+      </div> <!-- End: Pearl Earrings related code -->
+
+
+    <div class = "sunGlasses">
+      
+      <!-- Providing Picture of Black Sunglasses -->
+      <img class = "ph3" src = "200C0F3D-FD30-4A41-94DC-104B78484EA1.JPG" height = "800" width="600" alt= "sunglasses" />
+      
+      <!-- Sunglasses: Corresponding Article  -->
+      <!-- Retrieved from my instagram page:
+        https://www.instagram.com/tas4f/ -->
+      <article class = "sunglasses">
+        <br>
+        These are the sunglasses from @hm .
+        A lot of my friends do not approve buying sunglasses that are not super high quality, but probably you have figured out that aesthetics is at the top of my list. Therefore, I always go for a cheap pair of sunglasses if they are aesthetically pleasing. In fact, these were under 7 Euros.
+        <br><br>
+        The thing I love about these sunglasses is that they are black, super plain, super simple but still powerful enough to stand out and give you those Victoria Beckham vibes.
+        <br><br>
+        I usually don’t use them as glasses. Most of the time, they lay on top of my head as a headband. I don’t know, they kinda finish the look and while being very functional when its super sunny out there.     
+        </article>
+        <p class = "line">
+             _______________________________________________________________
+          <br><br>
+            </p>
+      </div> <!-- End: Sunglasses related code -->
+
+    <div class = "goldEarrings">
+        <!-- Providing Pictures: Gold Earrings -->
+        <img class = "ph1" src = "DD1FFB2F-9699-4C4A-AA3E-4506B02C3211.JPG" height = "600" width="400" alt = "earring"/>
+        <img class = "ph1" src = "EE8EB97E-F6D5-43C5-B39A-304F3238F16F.JPG" height = "600" width="400" alt = "earring"/> 
+
+        <!-- Gold Earrings: Corresponding Article -->
+        <article class = "goldEarRing">
+          <br>
+          I conducted a poll a couple of days ago. Despite the fact that most of you chose the everyday outfit option, I decided to go easy on myself and post the accessories piece (2nd most wanted option), since the regular outfit is just sweatpants and T-shirt because of the recent outbreak of COVID-19.
+          <br><br>
+          Now that the longest possible intro is delivered, I may present my favorite earrings. These earrings were a gift from my friend for my birthday last year. They are from @six_accessories.
+          <br><br>
+          Six has been one of my favorite shops since like 11th grade. At that time it was not even available in Tbilisi, but luckily a couple of years later they decided to open up a store in Georgia as well.
+          <br><br>
+          I guess it won’t be a surprise to say that I was very happy with the present.
+          As you can see, the shape is pretty unique - kind of a snowflake. The best thing about them is that anyone could dress up an outfit with this kind of gold detail. What’s more I always get compliments on these. For the past year they’ve kind of become my personal cheerleaders boosting my confidence.
+          </article>
+          <p class = "line">
+             _______________________________________________________________
+          <br><br>
+            </p>
+      </div> <!-- End: Gold Earring related code -->
+
+    </div> <!-- End: class = "center" -->
+    </body>
+  </html>
